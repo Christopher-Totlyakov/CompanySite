@@ -1,60 +1,6 @@
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    background-color: #f4f4f9;
-    color: #333;
-}
-
-header {
-    background: #0073e6;
-    color: white;
-    padding: 1em 0;
-    text-align: center;
-}
-
-header nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-header nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-header nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-main {
-    padding: 20px;
-    background: white;
-    margin: 20px auto;
-    max-width: 1200px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-}
-
-footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 1em 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-footer a {
-    color: #0073e6;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
+@import url(reset.css);
+@import url(footer.css);
+@import url(header.css);
+@import url(main.css);
+@import url(pages/home.css);
+@import url(responsive.css);
