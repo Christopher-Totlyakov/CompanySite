@@ -3,4 +3,7 @@
 @import url(header.css);
 @import url(main.css);
 @import url(pages/home.css);
+@import url(pages/about.css);
+
+
 @import url(responsive.css);
