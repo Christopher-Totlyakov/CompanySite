@@ -58,13 +58,13 @@
     position: relative;
     line-height: 1em;
     font-size: 16em;
-    color: #25283B;
+    color: rgb(37, 40, 59);
 }
 .banner .content h1::after{
     position: absolute;
     inset: 0 0 0 0;
     content: attr(data-content);
-    -webkit-text-stroke: 2px #d2d2d2;
+    -webkit-text-stroke: 2px rgb(210, 210, 210);
     color: transparent;
     z-index: 2;
 }
