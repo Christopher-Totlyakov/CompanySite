@@ -1,0 +1,47 @@
+#gallerTitle{
+    font-size: 4em;
+    margin: 0.4em 0;
+}
+
+.gallery{
+    columns: 300px;
+}
+.gallery img{
+    margin-bottom: 1em;
+    position: sticky;
+    z-index: 99;
+    border: 3px dashed black;
+}
+
+.gallery img:hover{
+    filter: saturate(20%);
+    transition: filter 0.5s;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 95%;
+    background: rgba(0, 0, 0, 0.788);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+    opacity: 0;
+    transition: opacity 0.5s;
+    z-index: 999;
+}
+
+.gallery-item:hover .overlay {
+    opacity: 1;
+}
