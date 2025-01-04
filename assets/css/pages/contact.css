@@ -1,0 +1,87 @@
+#contactTitle {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin: 0.6em;
+    font-size: 2em;
+}
+
+.contact{
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0.4em 2em;
+    border-radius: 25px;
+    gap: 20px;
+    background-color: rgb(23, 23, 23);
+    transition: .4s ease-in-out;
+}
+  
+.form:hover {
+    border: 3px dashed black;
+  transform: scale(1.05);
+}
+
+.field {
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: rgb(23, 23, 23);
+  gap: 0.5em;
+  padding: 0.6em;
+  border: none;
+  border-radius: 25px;
+  box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+  outline: none;
+}
+
+.inputField {
+  width: 100%;
+  color: rgb(212, 212, 212);
+  font-size: 1.4em;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.inputField:not(:nth-child(2)){
+  margin-left: 25px;
+}
+
+.inputField:last-child{
+  resize: none;
+}
+
+.form .icon {
+  width: 1.3em;
+  height: auto;
+  fill: white;
+} 
+
+.button {
+  background-color: rgb(37, 37, 37);
+  color: white;
+  font-size: 1.2em;
+  margin-bottom: 3em;
+  padding: 1em;
+  width: 300px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  transition: .4s ease-in-out;
+}
+
+.button:hover {
+  background-color: red;
+  color: white;
+}
