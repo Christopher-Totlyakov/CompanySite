@@ -222,7 +222,50 @@ h1{
 
 .aboutInfo h1{
     margin: 40px 0;
+
+}
+.aboutInfo h2{
+    margin: 0 60px;
 }
 
+.main-image-container {
+    position: relative;
+    width: 600px; 
+    overflow: hidden; 
+    pointer-events: none;
+    z-index: 3;
+}
 
-  
+.main-image {
+    width: 100%;
+    mask-image: url('/assets/img/mask.png'); 
+    -webkit-mask-image: url('/assets/img/mask.png'); 
+    mask-size: cover; 
+    -webkit-mask-size: cover; 
+    mask-position: center top; 
+    -webkit-mask-position: center top; 
+}
+
+.businessCard{
+    display: flex;
+    align-items: center;
+}
+
+.businessCard a{
+    font-size: 1.2em;
+    height: 70px;
+    background-color: rgb(7, 24, 46);
+    padding: 20px;
+    color: white;
+    border-radius: 30px;
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+    left: -200px;
+    top: -100px;
+}
+
+.businessCard a:hover{
+    background-color: red;
+    border: 4px dashed black;
+}
