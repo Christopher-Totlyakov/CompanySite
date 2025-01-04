@@ -3,6 +3,8 @@ document.addEventListener("DOMContentLoaded", () => {
         .then(response => response.text())
         .then(data => {
             document.getElementById("header").innerHTML = data;
+        }).then(() => {
+            initMenu();
         });
 
     fetch("/_includes/footer.html")

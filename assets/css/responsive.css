@@ -25,6 +25,17 @@
         text-align: center;
         padding: 0 30px;
     }
+
+
+    /*  */
+    #main-nav{
+        display: none;
+    }
+    #phone-nav{
+        display: block;
+        margin: 0 20px;
+    }
+
 }
 @media screen and (max-width: 767px) {
     .banner .slider{

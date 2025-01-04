@@ -1,11 +1,32 @@
 
 header {
-    background: #0073e6;
+    background: #333;
     color: white;
-    padding: 1em 0;
+    padding: 1.2em 0;
     text-align: center;
     position: relative;
-    z-index: 1;
+    z-index: 9999999;
+}
+nav{
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.hederTitle{
+    display: flex;
+    align-items: center;
+}
+
+nav img{
+    position: relative;
+    top: 20px;
+    width: 100px;
+    border-radius: 50px;
+    margin: 0 25px;
+    border: 7px solid #333;
 }
 
 header nav ul {
@@ -23,3 +44,172 @@ header nav ul li a {
     text-decoration: none;
     font-weight: bold;
 }
+
+
+#phone-nav{
+    display: none;
+}
+
+#phone-nav-icon {
+    width: 40px;
+    position: relative;
+    transform: rotate(0deg);
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    height: 30px;
+    z-index: 2;
+}
+#phone-nav-icon .nav-icon-line {
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 32px;
+    background: #DADADA;
+    left: unset;
+    right: 0;
+    transform: rotate(0deg);
+    transition: 0.25s ease-in-out;
+    border-radius: 25%;
+}
+
+
+#phone-nav-icon .nav-icon-line.first-line {
+    top: 0px;
+}
+#phone-nav-icon .nav-icon-line.second-line {
+    top: 10px;
+}
+#phone-nav-icon .nav-icon-line.third-line {
+    top: 20px;
+}
+
+#phone-nav-icon .nav-icon-line.first-line,
+#phone-nav-icon .nav-icon-line.second-line,
+#phone-nav-icon .nav-icon-line.third-line {
+    transform-origin: left center;
+}
+
+#phone-nav-icon.open .nav-icon-line.first-line {
+    transform: rotate(40deg);
+}
+#phone-nav-icon.open .nav-icon-line.second-line {
+    width: 0%;
+    opacity: 0;
+}
+#phone-nav-icon.open .nav-icon-line.third-line {
+    transform: rotate(-40deg);
+}
+
+#phone-nav{
+    display: none;
+}
+
+#phone-nav-icon {
+    width: 40px;
+    position: relative;
+    transform: rotate(0deg);
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    height: 30px;
+    z-index: 2;
+}
+#phone-nav-icon .nav-icon-line {
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 32px;
+    background: #DADADA;
+    left: unset;
+    right: 0;
+    transform: rotate(0deg);
+    transition: 0.25s ease-in-out;
+    border-radius: 25%;
+}
+
+
+#phone-nav-icon .nav-icon-line.first-line {
+    top: 0px;
+}
+#phone-nav-icon .nav-icon-line.second-line {
+    top: 10px;
+}
+#phone-nav-icon .nav-icon-line.third-line {
+    top: 20px;
+}
+
+#phone-nav-icon .nav-icon-line.first-line,
+#phone-nav-icon .nav-icon-line.second-line,
+#phone-nav-icon .nav-icon-line.third-line {
+    transform-origin: left center;
+}
+
+#phone-nav-icon.open .nav-icon-line.first-line {
+    transform: rotate(40deg);
+}
+#phone-nav-icon.open .nav-icon-line.second-line {
+    width: 0%;
+    opacity: 0;
+}
+#phone-nav-icon.open .nav-icon-line.third-line {
+    transform: rotate(-40deg);
+}
+
+.menu-box{
+    position: absolute;
+    height: 300px;
+    width: 150px;
+    background-color: #333;
+    z-index: 1;
+    background-position: left;
+    right: 2px;
+    top: 0;
+    border-radius: 0 0  0 50px;
+    opacity: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-box ul li a{
+    border-bottom: 3px dashed white;
+}
+.transition-exit {
+    animation: fadeOut 0.8s ease-in-out 1;
+    
+}
+.transition-enter {
+    animation: fadeIn 0.1s ease-in-out 1;
+}
+@keyframes fadeOut {
+    from {
+        clip-path: circle(150% at 100% 0px);
+        opacity: 1;
+    }
+    to {
+        clip-path: circle(0% at 100% 0px);
+        opacity: 0;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        clip-path: circle(0% at 100% 0px);
+        opacity: 0;
+    }
+    to {
+        clip-path: circle(150% at 100% 0px);
+        opacity: 1;
+    }
+}
+
+
+.menu-box > ul a{
+    padding: 0;
+   margin: 0 1em 0 0.5em;
+   font-size: 1.3em;
+}
+
+.menu-box ul li{
+    margin-bottom: 0.5em;
+}
+
