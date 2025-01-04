@@ -241,23 +241,3 @@
 .advertisement:has(.product:hover) .signs img:nth-child(1){
     transform: translateX(100px) translateY(100px);
 }
-
-@media screen and (max-width: 767px) {
-    .wrap{
-        width: 450px;
-    }
-    .signs img{
-        width: 70vw;
-        bottom: -5%;
-    }
-    .signs img:nth-child(1){
-        width: 70vw;
-    }
-
-    .advertisement:has(.product:hover) .signs img:nth-child(2){
-        transform: translateX(-30px) translateY(30px);
-    }
-    .advertisement:has(.product:hover) .signs img:nth-child(1){
-        transform: translateX(30px) translateY(30px);
-    }
-}
