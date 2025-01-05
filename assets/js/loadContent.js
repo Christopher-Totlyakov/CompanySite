@@ -7,11 +7,12 @@ document.addEventListener("DOMContentLoaded", () => {
             initMenu();
         });
 
-    fetch("/_includes/footer.html")
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById("footer").innerHTML = data;
-        });
+        // CVG не се зареждат правилно при заявката
+    // fetch("/_includes/footer.html")
+    //     .then(response => response.text())
+    //     .then(data => {
+    //         document.getElementById("footer").innerHTML = data;
+    //     });
 
     
 });

@@ -117,6 +117,10 @@
         border-right: 15px solid white;
         border-left: 0;
     }
+
+    footer svg {
+        width: 25px;
+    }
 }
 
 @media screen and (max-width: 426px) {
