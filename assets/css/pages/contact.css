@@ -89,3 +89,10 @@
   background-color: red;
   color: white;
 }
+
+.inputField:-webkit-autofill {
+  background-color: transparent !important; 
+  color: white !important; 
+  -webkit-text-fill-color: white !important; 
+  transition: background-color 5000s ease-in-out 0s; 
+}
