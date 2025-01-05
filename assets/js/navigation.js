@@ -5,7 +5,7 @@ function initMenu() {
     const bodyElement = document.querySelector('html');
     let flagAnimation = false;
 
-    if (!navContainer || !menuBoxElement) return; // Предотвратяване на грешки, ако елементите още не са заредени
+    if (!navContainer || !menuBoxElement) return;
 
     navContainer.addEventListener('click', () => {
         if (!navContainer.classList.contains('open')) {
